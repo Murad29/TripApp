@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="TripApp.Views.TicketListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TripApp.Views"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:nc="clr-namespace:TripApp"
+             xmlns:vm="clr-namespace:TripApp.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="900"
+             Name="TicketList"
+             d:DataContext="{d:DesignInstance vm:TicketListViewModel}">
+    <UserControl.Resources>
+        <DataTemplate x:Key="ListBoxTemplate">
+            <DockPanel>
+                <Button DockPanel.Dock="Right" 
+                        Command="{Binding DataContext.DeleteTicketCommand, ElementName=TicketList}"
+                        CommandParameter="{Binding}">❌</Button>
+                <Button DockPanel.Dock="Right" 
+                        Command="{Binding DataContext.EditTicketCommand, ElementName=TicketList}"
+                        CommandParameter="{Binding}">🖊</Button>
+                <StackPanel>
+                    <Label Foreground="{DynamicResource PrimaryHueDarkBrush}" Content="{Binding TicketName}"/>
+                </StackPanel>
+            </DockPanel>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <DockPanel LastChildFill="True" DockPanel.Dock="Top">
+            <Label Foreground="{DynamicResource PrimaryHueDarkBrush}" DockPanel.Dock="Left" FontSize="25">🔎</Label>
+            <TextBox Foreground="{DynamicResource PrimaryHueDarkBrush}" FontSize="30"></TextBox>
+        </DockPanel>
+        <ListBox Grid.Row="1" HorizontalContentAlignment="Stretch" FontSize="30" ItemsSource="{Binding Tickets}" ItemTemplate="{StaticResource ListBoxTemplate}"/>
+        <Button Grid.Row="2" FontSize="20" Style="{DynamicResource MaterialDesignFloatingActionDarkButton}" Command="{Binding AddTicketCommand}">
+            <materialDesign:PackIcon Kind="Add"/>
+        </Button>
+    </Grid>
+</UserControl>

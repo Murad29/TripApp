@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="TripApp.Views.AddEditTicketView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TripApp.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="900">
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Bottom" Grid.Row="1" Columns="2">
+            <Button FontSize="20" Command="{Binding AddTripCommand}" Style="{DynamicResource MaterialDesignRaisedDarkButton}">Add Trip</Button>
+            <Button FontSize="20" Command="{Binding CancelCommand}" Style="{DynamicResource MaterialDesignRaisedDarkButton}">Cancel</Button>
+        </UniformGrid>
+        <StackPanel>
+            <Label Foreground="{DynamicResource SecondaryAccentForegroundBrush}"  FontSize="20">Ticket Name</Label>
+            <TextBox FontSize="35" Foreground="{DynamicResource PrimaryHueMidBrush}" Text="{Binding Ticket.TicketName, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <Label Foreground="{DynamicResource SecondaryAccentForegroundBrush}"  FontSize="20">TicketSource</Label>
+            <DockPanel>
+                <Button DockPanel.Dock="Right" Command="{Binding AddSourceTripCommand}">...</Button>
+                <TextBox FontSize="35" Foreground="{DynamicResource PrimaryHueMidBrush}" Text="{Binding TicketSource, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            </DockPanel>
+        </StackPanel>
+    </DockPanel>
+</UserControl>

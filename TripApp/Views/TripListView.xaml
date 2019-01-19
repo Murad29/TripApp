@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="TripApp.Views.TripListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:TripApp.ViewModels"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TripApp.Views"
+             xmlns:t="clr-namespace:TripApp.Tools"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="600"
+             Name="TripList"
+             d:DataContext="{d:DesignInstance vm:TripListViewModel}">
+    <UserControl.Resources>
+        <t:InverseBooleanConverter x:Key="boolConverter"></t:InverseBooleanConverter>
+
+        <DataTemplate x:Key="ListBoxTemplate">
+            <DockPanel>
+                <Button DockPanel.Dock="Right" 
+                        Command="{Binding DataContext.DeleteTripCommand, ElementName=TripList}"
+                        CommandParameter="{Binding}">❌</Button>
+                <Button DockPanel.Dock="Right" 
+                        Command="{Binding DataContext.EditTripCommand, ElementName=TripList}"
+                        CommandParameter="{Binding}">🖊</Button>
+                <Button DockPanel.Dock="Right"
+                        Command="{Binding DataContext.SelectTripCommand, ElementName=TripList}"
+                        CommandParameter="{Binding}" IsEnabled="{Binding Select, Converter={StaticResource boolConverter}}">✔</Button>
+                <StackPanel>
+                    <Label Foreground="{DynamicResource PrimaryHueDarkBrush}" Content="{Binding Name}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontSize="15" Foreground="{DynamicResource PrimaryHueDarkBrush}" Content="{Binding DepartureDate}"/>
+                        <Label FontSize="15">-</Label>
+                        <Label FontSize="15" Foreground="{DynamicResource PrimaryHueDarkBrush}" Content="{Binding ArrivalDate}"/>
+                    </StackPanel>
+                </StackPanel>
+            </DockPanel>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <DockPanel LastChildFill="True" DockPanel.Dock="Top">
+            <Label Foreground="{DynamicResource PrimaryHueDarkBrush}" DockPanel.Dock="Left" FontSize="25">🔎</Label>
+            <TextBox Foreground="{DynamicResource PrimaryHueDarkBrush}" FontSize="30"></TextBox>
+        </DockPanel>
+        <ListBox Grid.Row="1" HorizontalContentAlignment="Stretch" FontSize="30" ItemsSource="{Binding Trips}" ItemTemplate="{StaticResource ListBoxTemplate}">
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="❌"/>
+                    <MenuItem Command="{Binding DataContext.EditTripCommand, ElementName=TripList}"
+                              CommandParameter="{Binding}"
+                              Header="🖊" />
+                    <Separator />
+                    <MenuItem Header="✔"/>
+                </ContextMenu>
+                    <!--<Button>❌</Button>
+                    <Button>🖊</Button>
+                    <Button DockPanel.Dock="Right"
+                        Command="{Binding DataContext.SelectTripCommand, ElementName=TripList}"
+                        CommandParameter="{Binding}" IsEnabled="{Binding Select, Converter={StaticResource boolConverter}}">✔</Button>-->
+
+            </ListBox.ContextMenu>
+        </ListBox>
+        <Button Grid.Row="2" FontSize="20" Style="{DynamicResource MaterialDesignFloatingActionDarkButton}" Command="{Binding AddTripCommand}">
+            <materialDesign:PackIcon Kind="Add"/>
+        </Button>
+    </Grid>
+</UserControl>

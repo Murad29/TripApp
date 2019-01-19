@@ -1,0 +1,33 @@
+{
+  "defaultAssembly": "TripApp",
+  "components": [
+    { "type": "TripApp.ViewModels.AddEditTicketViewModel" },
+    { "type": "TripApp.ViewModels.AddEditTripViewModel" },
+    { "type": "TripApp.ViewModels.CityViewModel" },
+    { "type": "TripApp.ViewModels.MainWindowViewModel" },
+    { "type": "TripApp.ViewModels.MenuViewModel" },
+    { "type": "TripApp.ViewModels.TicketListViewModel" },
+    { "type": "TripApp.ViewModels.TripListViewModel" },
+    {
+      "type": "TripApp.Models.AppDbContext",
+      "instanceScope": "single-instance"
+    },
+    {
+      "type": "TripApp.Services.MessageService",
+      "services": [
+        {
+          "type": "TripApp.Services.IMessageService"
+        }
+      ]
+    },
+    {
+      "type": "TripApp.Services.NavigationService",
+      "services": [
+        {
+          "type": "TripApp.Services.INavigationService"
+        }
+      ],
+      "instanceScope": "single-instance"
+    }
+  ]
+}
