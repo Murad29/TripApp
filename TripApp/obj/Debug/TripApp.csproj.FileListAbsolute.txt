@@ -298,3 +298,8 @@ C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.VBV
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.GFH.resources
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.NullableBool.resources
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.RequiredTicketSourse.resources
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\AddEditTicketView.g.cs
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\MenuView.g.cs
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\App.baml
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\AddEditTicketView.baml
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\MenuView.baml
