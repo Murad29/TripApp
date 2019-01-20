@@ -226,9 +226,7 @@ C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.TestDont
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.NewChange.resources
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\AddEditTripView.g.cs
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\AddEditTripView.baml
-C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\AddTicketView.g.cs
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\TicketListView.g.cs
-C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\AddTicketView.baml
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\TicketListView.baml
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\bin\Debug\autofac.json
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\bin\Debug\System.Data.Common.dll
@@ -303,3 +301,13 @@ C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\MenuView.g.cs
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\App.baml
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\AddEditTicketView.baml
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\MenuView.baml
+C:\Users\User\source\repos\TripApp\TripApp\bin\Debug\MaterialDesignColors.dll
+C:\Users\User\source\repos\TripApp\TripApp\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\User\source\repos\TripApp\TripApp\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\User\source\repos\TripApp\TripApp\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.newValidation.resources
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.VBVB.resources
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.GFH.resources
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.NullableBool.resources
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.RequiredTicketSourse.resources
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.City.resources
