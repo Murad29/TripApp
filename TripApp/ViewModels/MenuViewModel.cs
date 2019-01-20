@@ -13,7 +13,6 @@ namespace TripApp.ViewModels
 {
     class MenuViewModel : ViewModelBase
     {
-
         private readonly INavigationService navigation;
 
         public MenuViewModel(INavigationService navigation)
