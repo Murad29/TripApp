@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace TripApp.Views
 {
     /// <summary>
-    /// Interaction logic for CityView.xaml
+    /// Interaction logic for SearchCityView.xaml
     /// </summary>
-    public partial class CityView : UserControl
+    public partial class SearchCityView : UserControl
     {
-        public CityView()
+        public SearchCityView()
         {
             InitializeComponent();
         }
