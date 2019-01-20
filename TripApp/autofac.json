@@ -6,6 +6,7 @@
     { "type": "TripApp.ViewModels.CityViewModel" },
     { "type": "TripApp.ViewModels.MainWindowViewModel" },
     { "type": "TripApp.ViewModels.MenuViewModel" },
+    { "type": "TripApp.ViewModels.SearchCityViewModel" },
     { "type": "TripApp.ViewModels.TicketListViewModel" },
     { "type": "TripApp.ViewModels.TripListViewModel" },
     {

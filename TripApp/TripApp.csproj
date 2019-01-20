@@ -216,14 +216,17 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\City.cs" />
-    <Compile Include="Services\CurrentDateAttribute.cs" />
+    <Compile Include="Services\CountryRequest.cs" />
+    <Compile Include="Services\ICountryRequest.cs" />
     <Compile Include="Services\IMessageService.cs" />
     <Compile Include="Models\Ticket.cs" />
     <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\Trip.cs" />
     <Compile Include="Services\INavigationService.cs" />
+    <Compile Include="Services\IWeatherRequest.cs" />
     <Compile Include="Services\MessageService.cs" />
     <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="Services\WeatherRequest.cs" />
     <Compile Include="Tools\InverseBooleanConverter.cs" />
     <Compile Include="ViewModelLocator.cs" />
     <Compile Include="ViewModels\AddEditTripViewModel.cs" />
@@ -231,6 +234,7 @@
     <Compile Include="ViewModels\CityViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
+    <Compile Include="ViewModels\SearchCityViewModel.cs" />
     <Compile Include="ViewModels\TicketListViewModel.cs" />
     <Compile Include="ViewModels\TripListViewModel.cs" />
     <Compile Include="Views\AddEditTicketView.xaml.cs">
@@ -248,13 +252,16 @@
     <Compile Include="Views\MenuView.xaml.cs">
       <DependentUpon>MenuView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SearchCityView.xaml.cs">
+      <DependentUpon>SearchCityView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\TicketListView.xaml.cs">
       <DependentUpon>TicketListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TripListView.xaml.cs">
       <DependentUpon>TripListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WebBrowserUtility.cs" />
+    <Compile Include="Tools\WebBrowserUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -350,6 +357,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\MenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SearchCityView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

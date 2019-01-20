@@ -10,10 +10,13 @@
         <v:AddEditTripView/>
     </DataTemplate>
     <DataTemplate DataType="{x:Type vm:CityViewModel}">
-        <v:CitiesView/>
+        <v:CityView/>
     </DataTemplate>
     <DataTemplate DataType="{x:Type vm:MenuViewModel}">
         <v:MenuView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:SearchCityViewModel}">
+        <v:SearchCityView/>
     </DataTemplate>
     <DataTemplate DataType="{x:Type vm:AddEditTicketViewModel}">
         <v:AddEditTicketView/>

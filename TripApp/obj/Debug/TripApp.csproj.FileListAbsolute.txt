@@ -311,3 +311,5 @@ C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.GFH.reso
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.NullableBool.resources
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.RequiredTicketSourse.resources
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.City.resources
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\SearchCityView.g.cs
+C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\SearchCityView.baml
