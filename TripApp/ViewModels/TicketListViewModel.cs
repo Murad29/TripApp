@@ -2,6 +2,7 @@
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Windows;
 using TripApp.Messages;
 using TripApp.Models;
@@ -71,6 +72,17 @@ namespace TripApp.ViewModels
                         db.SaveChanges();
                         Tickets.Remove(param);
                     }
+                }
+            ));
+        }
+
+        private RelayCommand<Ticket> showTicketCommand;
+        public RelayCommand<Ticket> ShowTicketCommand
+        {
+            get => showTicketCommand ?? (showTicketCommand = new RelayCommand<Ticket>(
+                param =>
+                {
+                    Process.Start(param.TicketSource);
                 }
             ));
         }

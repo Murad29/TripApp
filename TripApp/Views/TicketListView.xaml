@@ -19,7 +19,7 @@
                         CommandParameter="{Binding}">❌</Button>
                 <Button DockPanel.Dock="Right" 
                         Command="{Binding DataContext.ShowTicketCommand, ElementName=TicketList}"
-                        CommandParameter="{Binding}">🖊</Button>
+                        CommandParameter="{Binding}">👁</Button>
                 <StackPanel>
                     <Label Foreground="{DynamicResource PrimaryHueDarkBrush}" Content="{Binding TicketName}"/>
                 </StackPanel>

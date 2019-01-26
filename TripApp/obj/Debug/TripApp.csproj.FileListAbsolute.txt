@@ -282,8 +282,6 @@ C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.Cha
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.Test.resources
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.TestDontWork.resources
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.NewChange.resources
-C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\AddEditTicketView.g.cs
-C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\AddEditTicketView.baml
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\bin\Debug\MaterialDesignColors.dll
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\bin\Debug\MaterialDesignThemes.Wpf.dll
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\bin\Debug\MaterialDesignThemes.Wpf.pdb
@@ -313,7 +311,9 @@ C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.Required
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.City.resources
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\SearchCityView.g.cs
 C:\Users\User\source\repos\TripApp\TripApp\obj\Debug\Views\SearchCityView.baml
-C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\SearchCityView.g.cs
-C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\SearchCityView.baml
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.City.resources
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.CityDeleted.resources
+C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\AddTicketView.g.cs
+C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\AddTicketView.baml
+C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\RouteMapView.g.cs
+C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\RouteMapView.baml

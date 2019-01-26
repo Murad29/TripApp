@@ -46,24 +46,7 @@
             <Label Foreground="{DynamicResource PrimaryHueDarkBrush}" DockPanel.Dock="Left" FontSize="25">🔎</Label>
             <TextBox Foreground="{DynamicResource PrimaryHueDarkBrush}" FontSize="30"></TextBox>
         </DockPanel>
-        <ListBox Grid.Row="1" HorizontalContentAlignment="Stretch" FontSize="30" ItemsSource="{Binding Trips}" ItemTemplate="{StaticResource ListBoxTemplate}">
-            <ListBox.ContextMenu>
-                <ContextMenu>
-                    <MenuItem Header="❌"/>
-                    <MenuItem Command="{Binding DataContext.EditTripCommand, ElementName=TripList}"
-                              CommandParameter="{Binding}"
-                              Header="🖊" />
-                    <Separator />
-                    <MenuItem Header="✔"/>
-                </ContextMenu>
-                    <!--<Button>❌</Button>
-                    <Button>🖊</Button>
-                    <Button DockPanel.Dock="Right"
-                        Command="{Binding DataContext.SelectTripCommand, ElementName=TripList}"
-                        CommandParameter="{Binding}" IsEnabled="{Binding Select, Converter={StaticResource boolConverter}}">✔</Button>-->
-
-            </ListBox.ContextMenu>
-        </ListBox>
+        <ListBox Grid.Row="1" HorizontalContentAlignment="Stretch" FontSize="30" ItemsSource="{Binding Trips}" ItemTemplate="{StaticResource ListBoxTemplate}"></ListBox>
         <Button Grid.Row="2" FontSize="20" Style="{DynamicResource MaterialDesignFloatingActionDarkButton}" Command="{Binding AddTripCommand}">
             <materialDesign:PackIcon Kind="Add"/>
         </Button>

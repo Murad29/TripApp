@@ -1,12 +1,12 @@
 {
   "defaultAssembly": "TripApp",
   "components": [
-    { "type": "TripApp.ViewModels.AddEditTicketViewModel" },
+    { "type": "TripApp.ViewModels.AddTicketViewModel" },
     { "type": "TripApp.ViewModels.AddEditTripViewModel" },
     { "type": "TripApp.ViewModels.CityViewModel" },
     { "type": "TripApp.ViewModels.MainWindowViewModel" },
     { "type": "TripApp.ViewModels.MenuViewModel" },
-    { "type": "TripApp.ViewModels.SearchCityViewModel" },
+    { "type": "TripApp.ViewModels.RouteMapViewModel" },
     { "type": "TripApp.ViewModels.TicketListViewModel" },
     { "type": "TripApp.ViewModels.TripListViewModel" },
     {

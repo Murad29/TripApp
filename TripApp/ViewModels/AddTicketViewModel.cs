@@ -42,7 +42,7 @@ namespace TripApp.ViewModels
             get => addSourceCommand ?? (addSourceCommand = new RelayCommand(
                 () =>
                 {
-                    navigationService.Navigate<AddEditTicketViewModel>();
+                    navigationService.Navigate<AddTicketViewModel>();
                     Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog
                     {
                         DefaultExt = ".pdf",
@@ -53,8 +53,6 @@ namespace TripApp.ViewModels
 
                     if (result == true)
                         TicketSource = Ticket.TicketSource = dlg.FileName;
-
-                    MessageBox.Show(Ticket.TicketSource);
                 }
             ));
         }

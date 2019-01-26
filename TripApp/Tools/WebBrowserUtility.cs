@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace TripApp
+namespace TripApp.Tools
 {
     public static class WebBrowserUtility
     {
         public static readonly DependencyProperty BindableSourceProperty =
-                DependencyProperty.RegisterAttached("BindableSource", typeof(string), typeof(WebBrowserUtility), new UIPropertyMetadata(null, BindableSourcePropertyChanged));
+            DependencyProperty.RegisterAttached("BindableSource", typeof(string), typeof(WebBrowserUtility), new UIPropertyMetadata(null, BindableSourcePropertyChanged));
 
         public static string GetBindableSource(DependencyObject obj)
         {
@@ -32,5 +32,6 @@ namespace TripApp
                 browser.Source = !String.IsNullOrEmpty(uri) ? new Uri(uri) : null;
             }
         }
+
     }
 }

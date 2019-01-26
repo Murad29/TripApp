@@ -12,7 +12,7 @@
             <Button FontSize="20" Command="{Binding NavigateCommand}" CommandParameter="{x:Type vm:TripListViewModel}">Trips</Button>
             <!--<Button FontSize="40" Background="White" Command="{Binding NavigateCommand}" CommandParameter="{x:Type vm:}">Checkist</Button>-->
             <Button FontSize="20" Command="{Binding NavigateCommand}" CommandParameter="{x:Type vm:TicketListViewModel}">Tickets</Button>
-            <Button FontSize="20" Command="{Binding NavigateCommand}" CommandParameter="{x:Type vm:SearchCityViewModel}">Cities</Button>
+            <Button FontSize="20" Command="{Binding NavigateCommand}" CommandParameter="{x:Type vm:CityViewModel}">Cities</Button>
             <!--<Button FontSize="40" Background="White" Command="{Binding NavigateCommand}" CommandParameter="{x:Type vm:FirstViewModel}">Bookings</Button>-->
             <!--<Button FontSize="40" Background="White" Command="{Binding NavigateCommand}" CommandParameter="{x:Type vm:FirstViewModel}">Route Map</Button>-->
 

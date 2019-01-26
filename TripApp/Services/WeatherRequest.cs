@@ -16,7 +16,7 @@ namespace TripApp.Services
         private static readonly string weatherApiUrl = @"https://api.openweathermap.org/data/2.5/weather";
 
         public string CountryCode(JObject data) => data["sys"]["country"].ToString();
-
+        
         public string CurrentWeather(JObject data) => data["main"]["temp"].ToString();
 
         public JObject Request(string cityName)

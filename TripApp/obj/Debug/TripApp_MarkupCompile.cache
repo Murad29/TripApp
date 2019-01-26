@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\App.xaml
-9-2014683166
+9-1113027445
 
-661400865144
+68-520857018
 1471930529329
-DataTemplates.xaml;Views\AddEditTicketView.xaml;Views\AddEditTripView.xaml;Views\CityView.xaml;Views\MainWindowView.xaml;Views\MenuView.xaml;Views\SearchCityView.xaml;Views\TicketListView.xaml;Views\TripListView.xaml;
+DataTemplates.xaml;Views\AddEditTripView.xaml;Views\AddTicketView.xaml;Views\CityView.xaml;Views\MainWindowView.xaml;Views\MenuView.xaml;Views\RouteMapView.xaml;Views\TicketListView.xaml;Views\TripListView.xaml;
 
 False
 

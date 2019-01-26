@@ -14,7 +14,7 @@ namespace TripApp.Services
 
         private string currencyCode;
         private string language;
-        private static readonly string CountrieApiUrl = @"https://restcountries.eu/rest/v2/alpha";
+       // private static readonly string CountrieApiUrl = @"https://restcountries.eu/rest/v2/alpha";
 
         public string CountryName(JObject data) => data["name"].ToString();
 
@@ -36,7 +36,7 @@ namespace TripApp.Services
 
         public JObject Request(string countryCode)
         {
-            string request = $"{CountrieApiUrl}/{countryCode}";
+            string request = $"https://restcountries.eu/rest/v2/alpha/{countryCode}";
             string response = WebClient.DownloadString(request);
             JObject data = JObject.Parse(response);
 

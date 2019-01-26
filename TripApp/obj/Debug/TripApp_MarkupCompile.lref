@@ -1,12 +1,12 @@
 ﻿
 FC:\Users\ragi_mn59\source\repos\TripApp\TripApp\App.xaml;;
 FC:\Users\ragi_mn59\source\repos\TripApp\TripApp\DataTemplates.xaml;;
-FC:\Users\ragi_mn59\source\repos\TripApp\TripApp\Views\AddEditTicketView.xaml;;
 FC:\Users\ragi_mn59\source\repos\TripApp\TripApp\Views\AddEditTripView.xaml;;
+FC:\Users\ragi_mn59\source\repos\TripApp\TripApp\Views\AddTicketView.xaml;;
 FC:\Users\ragi_mn59\source\repos\TripApp\TripApp\Views\CityView.xaml;;
 FC:\Users\ragi_mn59\source\repos\TripApp\TripApp\Views\MainWindowView.xaml;;
 FC:\Users\ragi_mn59\source\repos\TripApp\TripApp\Views\MenuView.xaml;;
-FC:\Users\ragi_mn59\source\repos\TripApp\TripApp\Views\SearchCityView.xaml;;
+FC:\Users\ragi_mn59\source\repos\TripApp\TripApp\Views\RouteMapView.xaml;;
 FC:\Users\ragi_mn59\source\repos\TripApp\TripApp\Views\TicketListView.xaml;;
 FC:\Users\ragi_mn59\source\repos\TripApp\TripApp\Views\TripListView.xaml;;
 

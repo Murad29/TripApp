@@ -9,7 +9,6 @@ namespace TripApp.Models
 {
     public class Trip : ObservableObject, IDataErrorInfo
     {
-
         public int Id { get; set; }
         [Required]
         [MaxLength(50)]

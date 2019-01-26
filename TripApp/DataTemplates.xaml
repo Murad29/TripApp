@@ -15,8 +15,8 @@
     <DataTemplate DataType="{x:Type vm:MenuViewModel}">
         <v:MenuView/>
     </DataTemplate>
-    <DataTemplate DataType="{x:Type vm:SearchCityViewModel}">
-        <v:SearchCityView/>
+    <DataTemplate DataType="{x:Type vm:RouteMapViewModel}">
+        <v:RouteMapView/>
     </DataTemplate>
     <DataTemplate DataType="{x:Type vm:AddTicketViewModel}">
         <v:AddTicketView/>

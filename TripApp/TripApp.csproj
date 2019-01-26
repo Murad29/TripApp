@@ -159,6 +159,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Extentions\Extentions.cs" />
+    <Compile Include="Messages\CityMessage.cs" />
     <Compile Include="Messages\TicketListChangedMessage.cs" />
     <Compile Include="Messages\TripListChangedMessage.cs" />
     <Compile Include="Migrations\201901121926174_InitialCreate.cs" />
@@ -218,6 +219,7 @@
       <DependentUpon>201901260754389_CityDeleted.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\City.cs" />
     <Compile Include="Services\CountryRequest.cs" />
     <Compile Include="Services\ICountryRequest.cs" />
     <Compile Include="Services\IMessageService.cs" />
@@ -230,20 +232,21 @@
     <Compile Include="Services\NavigationService.cs" />
     <Compile Include="Services\WeatherRequest.cs" />
     <Compile Include="Tools\InverseBooleanConverter.cs" />
+    <Compile Include="Tools\WebBrowserUtility.cs" />
     <Compile Include="ViewModelLocator.cs" />
     <Compile Include="ViewModels\AddEditTripViewModel.cs" />
-    <Compile Include="ViewModels\AddEditTicketViewModel.cs" />
+    <Compile Include="ViewModels\AddTicketViewModel.cs" />
     <Compile Include="ViewModels\CityViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
-    <Compile Include="ViewModels\SearchCityViewModel.cs" />
+    <Compile Include="ViewModels\RouteMapViewModel.cs" />
     <Compile Include="ViewModels\TicketListViewModel.cs" />
     <Compile Include="ViewModels\TripListViewModel.cs" />
-    <Compile Include="Views\AddEditTicketView.xaml.cs">
-      <DependentUpon>AddEditTicketView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\AddEditTripView.xaml.cs">
       <DependentUpon>AddEditTripView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddTicketView.xaml.cs">
+      <DependentUpon>AddTicketView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CityView.xaml.cs">
       <DependentUpon>CityView.xaml</DependentUpon>
@@ -254,8 +257,8 @@
     <Compile Include="Views\MenuView.xaml.cs">
       <DependentUpon>MenuView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\SearchCityView.xaml.cs">
-      <DependentUpon>SearchCityView.xaml</DependentUpon>
+    <Compile Include="Views\RouteMapView.xaml.cs">
+      <DependentUpon>RouteMapView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TicketListView.xaml.cs">
       <DependentUpon>TicketListView.xaml</DependentUpon>
@@ -263,7 +266,6 @@
     <Compile Include="Views\TripListView.xaml.cs">
       <DependentUpon>TripListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tools\WebBrowserUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -345,11 +347,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\AddEditTicketView.xaml">
+    <Page Include="Views\AddEditTripView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\AddEditTripView.xaml">
+    <Page Include="Views\AddTicketView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -365,7 +367,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\SearchCityView.xaml">
+    <Page Include="Views\RouteMapView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
