@@ -18,8 +18,8 @@
     <DataTemplate DataType="{x:Type vm:SearchCityViewModel}">
         <v:SearchCityView/>
     </DataTemplate>
-    <DataTemplate DataType="{x:Type vm:AddEditTicketViewModel}">
-        <v:AddEditTicketView/>
+    <DataTemplate DataType="{x:Type vm:AddTicketViewModel}">
+        <v:AddTicketView/>
     </DataTemplate>
     <DataTemplate DataType="{x:Type vm:TicketListViewModel}">
         <v:TicketListView/>

@@ -10,7 +10,7 @@ namespace TripApp
     class ViewModelLocator
     {
         private readonly AddEditTripViewModel addTripViewModel;
-        private readonly AddEditTicketViewModel addEditTicketViewModel;
+        private readonly AddTicketViewModel addTicketViewModel;
         private readonly CityViewModel cityViewModel;
         private readonly MainWindowViewModel mainWindowViewModel;
         private readonly MenuViewModel menuViewModel;
@@ -33,7 +33,7 @@ namespace TripApp
             navigationService = Container.Resolve<INavigationService>();
 
             addTripViewModel = Container.Resolve<AddEditTripViewModel>();
-            addEditTicketViewModel = Container.Resolve<AddEditTicketViewModel>();
+            addTicketViewModel = Container.Resolve<AddTicketViewModel>();
             cityViewModel = Container.Resolve<CityViewModel>();
             mainWindowViewModel = Container.Resolve<MainWindowViewModel>();
             menuViewModel = Container.Resolve<MenuViewModel>();
@@ -42,7 +42,7 @@ namespace TripApp
             ticketsViewModel = Container.Resolve<TicketListViewModel>();
 
             navigationService.Register<AddEditTripViewModel>(addTripViewModel);
-            navigationService.Register<AddEditTicketViewModel>(addEditTicketViewModel);
+            navigationService.Register<AddTicketViewModel>(addTicketViewModel);
             navigationService.Register<CityViewModel>(cityViewModel);
             navigationService.Register<MenuViewModel>(menuViewModel);
             navigationService.Register<SearchCityViewModel>(searchCityViewModel);

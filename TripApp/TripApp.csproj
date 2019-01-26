@@ -159,7 +159,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Extentions\Extentions.cs" />
-    <Compile Include="Messages\CityListChangedMessage.cs" />
     <Compile Include="Messages\TicketListChangedMessage.cs" />
     <Compile Include="Messages\TripListChangedMessage.cs" />
     <Compile Include="Migrations\201901121926174_InitialCreate.cs" />
@@ -214,8 +213,11 @@
     <Compile Include="Migrations\201901192126061_City.Designer.cs">
       <DependentUpon>201901192126061_City.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901260754389_CityDeleted.cs" />
+    <Compile Include="Migrations\201901260754389_CityDeleted.Designer.cs">
+      <DependentUpon>201901260754389_CityDeleted.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\City.cs" />
     <Compile Include="Services\CountryRequest.cs" />
     <Compile Include="Services\ICountryRequest.cs" />
     <Compile Include="Services\IMessageService.cs" />
@@ -315,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201901192126061_City.resx">
       <DependentUpon>201901192126061_City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901260754389_CityDeleted.resx">
+      <DependentUpon>201901260754389_CityDeleted.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

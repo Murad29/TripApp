@@ -8,7 +8,7 @@ using TripApp.Services;
 
 namespace TripApp.ViewModels
 {
-    class AddEditTicketViewModel : ViewModelBase
+    class AddTicketViewModel : ViewModelBase
     {
         private Ticket ticket = new Ticket();
         public Ticket Ticket { get => ticket; set => Set(ref ticket, value); }
@@ -23,7 +23,7 @@ namespace TripApp.ViewModels
         private readonly IMessageService messageService;
         private readonly AppDbContext db;
 
-        public AddEditTicketViewModel(INavigationService navigationService, IMessageService messageService, AppDbContext db)
+        public AddTicketViewModel(INavigationService navigationService, IMessageService messageService, AppDbContext db)
         {
             this.navigationService = navigationService;
             this.messageService = messageService;

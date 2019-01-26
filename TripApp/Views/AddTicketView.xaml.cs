@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace TripApp.Views
 {
     /// <summary>
-    /// Interaction logic for AddEditTicketView.xaml
+    /// Interaction logic for AddTicketView.xaml
     /// </summary>
-    public partial class AddEditTicketView : UserControl
+    public partial class AddTicketView : UserControl
     {
-        public AddEditTicketView()
+        public AddTicketView()
         {
             InitializeComponent();
         }

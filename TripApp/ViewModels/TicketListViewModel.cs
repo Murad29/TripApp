@@ -52,7 +52,7 @@ namespace TripApp.ViewModels
             get => addTicketCommand ?? (addTicketCommand = new RelayCommand<string>(
                 param =>
                 {
-                    navigationService.Navigate<AddEditTicketViewModel>();
+                    navigationService.Navigate<AddTicketViewModel>();
                 }
             ));
         }
