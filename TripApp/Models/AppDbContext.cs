@@ -8,8 +8,7 @@ namespace TripApp.Models
         {
 
         }
-
-        public DbSet<City> Cities { get; set; }
+        
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<Trip> Trips { get; set; }
     }
