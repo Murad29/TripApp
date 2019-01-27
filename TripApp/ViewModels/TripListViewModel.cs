@@ -1,10 +1,8 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
-using System;
 using System.Collections.ObjectModel;
 using System.Windows;
-using System.Windows.Data;
 using TripApp.Messages;
 using TripApp.Models;
 using TripApp.Services;
@@ -76,8 +74,6 @@ namespace TripApp.ViewModels
             ));
         }
 
-        public bool Select { get; set; }
-
         private RelayCommand<Trip> selectTripCommand;
         public RelayCommand<Trip> SelectTripCommand
         {
@@ -87,7 +83,12 @@ namespace TripApp.ViewModels
                     if (param.Select == false)
                     {
                         param.Select = true;
-                        Select = param.Select.Value;
+
+                        foreach (var item in db.Trips)
+                        {
+                            if (item.Name != param.Name)
+                                item.Select = false;
+                        }
                     }
                 }
             ));
