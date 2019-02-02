@@ -218,6 +218,10 @@
     <Compile Include="Migrations\201901260754389_CityDeleted.Designer.cs">
       <DependentUpon>201901260754389_CityDeleted.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902020628006_TicketValidation.cs" />
+    <Compile Include="Migrations\201902020628006_TicketValidation.Designer.cs">
+      <DependentUpon>201902020628006_TicketValidation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Services\CountryRequest.cs" />
@@ -240,6 +244,7 @@
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
     <Compile Include="ViewModels\RouteMapViewModel.cs" />
+    <Compile Include="ViewModels\ShowTicketViewModel.cs" />
     <Compile Include="ViewModels\TicketListViewModel.cs" />
     <Compile Include="ViewModels\TripListViewModel.cs" />
     <Compile Include="Views\AddEditTripView.xaml.cs">
@@ -259,6 +264,9 @@
     </Compile>
     <Compile Include="Views\RouteMapView.xaml.cs">
       <DependentUpon>RouteMapView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShowTicketView.xaml.cs">
+      <DependentUpon>ShowTicketView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TicketListView.xaml.cs">
       <DependentUpon>TicketListView.xaml</DependentUpon>
@@ -323,6 +331,9 @@
     <EmbeddedResource Include="Migrations\201901260754389_CityDeleted.resx">
       <DependentUpon>201901260754389_CityDeleted.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902020628006_TicketValidation.resx">
+      <DependentUpon>201902020628006_TicketValidation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -368,6 +379,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\RouteMapView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ShowTicketView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

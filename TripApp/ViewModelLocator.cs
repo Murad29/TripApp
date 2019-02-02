@@ -15,6 +15,7 @@ namespace TripApp
         private readonly MainWindowViewModel mainWindowViewModel;
         private readonly MenuViewModel menuViewModel;
         private readonly RouteMapViewModel routeMapViewModel;
+        private readonly ShowTicketViewModel showTicketViewModel;
         private readonly TicketListViewModel ticketsViewModel;
         private readonly TripListViewModel tripListViewModel;
 
@@ -38,6 +39,7 @@ namespace TripApp
             mainWindowViewModel = Container.Resolve<MainWindowViewModel>();
             menuViewModel = Container.Resolve<MenuViewModel>();
             routeMapViewModel = Container.Resolve<RouteMapViewModel>();
+            showTicketViewModel = Container.Resolve<ShowTicketViewModel>();
             tripListViewModel = Container.Resolve<TripListViewModel>();
             ticketsViewModel = Container.Resolve<TicketListViewModel>();
 
@@ -46,6 +48,7 @@ namespace TripApp
             navigationService.Register<CityViewModel>(cityViewModel);
             navigationService.Register<MenuViewModel>(menuViewModel);
             navigationService.Register<RouteMapViewModel>(routeMapViewModel);
+            navigationService.Register<ShowTicketViewModel>(showTicketViewModel);
             navigationService.Register<TicketListViewModel>(ticketsViewModel);
             navigationService.Register<TripListViewModel>(tripListViewModel);
 

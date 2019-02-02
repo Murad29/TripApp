@@ -38,7 +38,7 @@ namespace TripApp.ViewModels
                 msg =>
                 {
                     Tickets.Add(msg.Item);
-                });
+                });                       
 
             foreach (var item in db.Trips)
             {
@@ -82,7 +82,8 @@ namespace TripApp.ViewModels
             get => showTicketCommand ?? (showTicketCommand = new RelayCommand<Ticket>(
                 param =>
                 {
-                    Process.Start(param.TicketSource);
+                    navigationService.Navigate<ShowTicketViewModel>();
+                    Messenger.Default.Send(new TicketListChangedMessage { Item = param });
                 }
             ));
         }

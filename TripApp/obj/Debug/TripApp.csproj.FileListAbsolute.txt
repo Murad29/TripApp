@@ -317,3 +317,6 @@ C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\AddTicketView.g.
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\AddTicketView.baml
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\RouteMapView.g.cs
 C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\RouteMapView.baml
+C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\ShowTicketView.g.cs
+C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\Views\ShowTicketView.baml
+C:\Users\ragi_mn59\source\repos\TripApp\TripApp\obj\Debug\TripApp.Migrations.TicketValidation.resources
