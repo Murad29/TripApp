@@ -89,6 +89,8 @@ namespace TripApp.ViewModels
                             if (item.Name != param.Name)
                                 item.Select = false;
                         }
+
+                        db.SaveChanges();
                     }
                 }
             ));
