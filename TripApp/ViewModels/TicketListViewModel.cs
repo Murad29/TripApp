@@ -2,7 +2,7 @@
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
+using System.Linq;
 using System.Windows;
 using TripApp.Messages;
 using TripApp.Models;
@@ -11,8 +11,7 @@ using TripApp.Services;
 namespace TripApp.ViewModels
 {
     public class TicketListViewModel : ViewModelBase
-    {             
-
+    {
         private Ticket ticket;
         public Ticket Ticket { get => ticket; set => Set(ref ticket, value); }
 
@@ -28,23 +27,26 @@ namespace TripApp.ViewModels
 
         public TicketListViewModel(AppDbContext db, IMessageService messageService, INavigationService navigationService)
         {
-            this.db = db;
-            this.messageService = messageService;
-            this.navigationService = navigationService;
-
-            Tickets = new ObservableCollection<Ticket>(db.Tickets);
-
-            Messenger.Default.Register<TicketListChangedMessage>(this,
-                msg =>
-                {
-                    Tickets.Add(msg.Item);
-                });                       
+            Tickets = null;
 
             foreach (var item in db.Trips)
             {
                 if(item.Select.Value)
                     selectedTrip = item;
             }
+
+            this.db = db;
+            this.messageService = messageService;
+            this.navigationService = navigationService;
+
+            var result = db.Tickets.Where(t => t.TripName.Id == selectedTrip.Id).ToList();
+            Tickets = new ObservableCollection<Ticket>(result);
+                        
+            Messenger.Default.Register<TicketListChangedMessage>(this,
+                msg =>
+                {
+                    Tickets.Add(msg.Item);
+                });
         }
 
         private RelayCommand<string> addTicketCommand;
