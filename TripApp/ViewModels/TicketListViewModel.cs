@@ -1,9 +1,9 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Windows;
 using TripApp.Messages;
 using TripApp.Models;
 using TripApp.Services;
@@ -22,16 +22,15 @@ namespace TripApp.ViewModels
         public ObservableCollection<Ticket> Tickets { get => tickets; set => Set(ref tickets, value); }
 
         private readonly INavigationService navigationService;
+        private List<Ticket> result;
         private readonly AppDbContext db;
         private readonly IMessageService messageService;
 
         public TicketListViewModel(AppDbContext db, IMessageService messageService, INavigationService navigationService)
         {
-            Tickets = null;
-
             foreach (var item in db.Trips)
             {
-                if(item.Select.Value)
+                if (item.Select.Value)
                     selectedTrip = item;
             }
 
@@ -39,14 +38,14 @@ namespace TripApp.ViewModels
             this.messageService = messageService;
             this.navigationService = navigationService;
 
-            var result = db.Tickets.Where(t => t.TripName.Id == selectedTrip.Id).ToList();
+            result = db.Tickets.Where(t => t.TripName.Id == selectedTrip.Id).ToList();
             Tickets = new ObservableCollection<Ticket>(result);
-                        
+
             Messenger.Default.Register<TicketListChangedMessage>(this,
-                msg =>
-                {
-                    Tickets.Add(msg.Item);
-                });
+            msg =>
+            {
+                Tickets.Add(msg.Item);
+            });
         }
 
         private RelayCommand<string> addTicketCommand;
@@ -56,6 +55,7 @@ namespace TripApp.ViewModels
                 param =>
                 {
                     navigationService.Navigate<AddTicketViewModel>();
+
                 }
             ));
         }
@@ -86,6 +86,7 @@ namespace TripApp.ViewModels
                 {
                     navigationService.Navigate<ShowTicketViewModel>();
                     Messenger.Default.Send(new TicketListChangedMessage { Item = param });
+                    Tickets.RemoveAt(Tickets.Count - 1);
                 }
             ));
         }
